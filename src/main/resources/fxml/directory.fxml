@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="alexjpo.javafx.browser.DirectoryController">
+   <top>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="breadCrumbList" onMouseClicked="#exitFolder" orientation="HORIZONTAL" prefHeight="45.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane maxWidth="80.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="diskList" onMouseClicked="#setDiskFolders" maxWidth="80.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="nodeList" onMouseClicked="#enterFolder" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane BorderPane.alignment="CENTER">
+		 <children>
+            <Label fx:id="statusFolderLabel" id="statusFolder" text="" AnchorPane.leftAnchor="0.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

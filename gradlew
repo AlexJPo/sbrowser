@@ -104,7 +104,7 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" -a "$nonstop" = "false" ] ; then
     fi
 fi
 
-# For Darwin, add options to specify how the application appears in the dock
+# For Darwin, add options to specify how the javafx.application appears in the dock
 if $darwin; then
     GRADLE_OPTS="$GRADLE_OPTS \"-Xdock:name=$APP_NAME\" \"-Xdock:icon=$APP_HOME/media/gradle.icns\""
 fi
@@ -118,8 +118,8 @@ if $cygwin ; then
     # We build the pattern for arguments to be converted via cygpath
     ROOTDIRSRAW=`find -L / -maxdepth 1 -mindepth 1 -type d 2>/dev/null`
     SEP=""
-    for dir in $ROOTDIRSRAW ; do
-        ROOTDIRS="$ROOTDIRS$SEP$dir"
+    for javafx in $ROOTDIRSRAW ; do
+        ROOTDIRS="$ROOTDIRS$SEP$javafx"
         SEP="|"
     done
     OURCYGPATTERN="(^($ROOTDIRS))"
