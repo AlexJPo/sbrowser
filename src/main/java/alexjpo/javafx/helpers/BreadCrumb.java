@@ -41,7 +41,7 @@ public class BreadCrumb {
 	
 	/**
 	 * Return javafx.helpers 'modelBreadCrumbList'
-	 * @return ObservableList<String> 'modelBreadCrumbList'
+	 * @return modelBreadCrumbList
 	 */
 	public ObservableList<String> getCrumb() {
 		return this.modelBreadCrumbList;

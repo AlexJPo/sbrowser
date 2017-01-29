@@ -1,7 +1,5 @@
 package alexjpo.javafx.helpers;
 
-import java.io.File;
-
 import alexjpo.model.Node;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -15,6 +13,7 @@ public class Folders {
 
 	/**
 	 * Set 'modelFolderList' data
+	 * @param nodes
 	 */
 	public void setFoldersModel(Node[] nodes) {
 		modelFolderList.clear();
@@ -28,7 +27,7 @@ public class Folders {
 	
 	/**
 	 * Return javafx.helpers 'modelFolderList'
-	 * @return ObservableList<String> modelFolderList
+	 * @return modelFolderList
 	 */
 	public ObservableList<String> getFoldersModel() {
 		return this.modelFolderList;

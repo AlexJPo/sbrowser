@@ -29,7 +29,7 @@ public class FolderStatus {
 
 	/**
 	 * Get 'status' text
-	 * @return String 'status' 
+	 * @return status
 	 */
 	public String getStatus() {
 		return "Total folders: " + foldersCount + ", Total files: " + filesCount;

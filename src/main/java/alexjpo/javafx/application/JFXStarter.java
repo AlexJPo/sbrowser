@@ -35,7 +35,7 @@ public class JFXStarter extends AbstractJavaFxApplicationSupport {
 
 	@Bean
 	public StructureProvider structureProvider() {
-		return new FileSystemProvider();
+		return new ClassPathProvider();
 	}
 	
 	public static void main(String[] args) {

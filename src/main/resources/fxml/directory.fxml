@@ -16,9 +16,9 @@
       </AnchorPane>
    </top>
    <left>
-      <AnchorPane maxWidth="80.0" BorderPane.alignment="CENTER">
+      <AnchorPane maxWidth="150.0" BorderPane.alignment="CENTER">
          <children>
-            <ListView fx:id="diskList" onMouseClicked="#setDiskFolders" maxWidth="80.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ListView fx:id="diskList" onMouseClicked="#setDiskFolders" maxWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
          </children>
          <BorderPane.margin>
             <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />

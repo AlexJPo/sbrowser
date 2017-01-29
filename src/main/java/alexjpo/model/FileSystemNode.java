@@ -5,7 +5,7 @@ import org.springframework.util.StringUtils;
 import java.io.File;
 import java.util.Arrays;
 
-public class FileSystemNode implements Node{
+public class FileSystemNode implements Node {
     private File file;
 
     public FileSystemNode(File file) {
@@ -18,12 +18,14 @@ public class FileSystemNode implements Node{
 
     public Node[] getChildren() {
         File[] files = file.listFiles();
+
         if (files == null || files.length < 1) {
             return new Node[0];
         }
         Node[] nodes = Arrays.stream(files)
                 .map(file -> new FileSystemNode(file))
                 .toArray(Node[]::new);
+
         return nodes;
     }
 
