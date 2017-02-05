@@ -1,8 +1,8 @@
 package alexjpo.javafx.application;
 	
 import alexjpo.javafx.browser.DirectoryView;
-import alexjpo.providers.ClassPathProvider;
 import de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Lazy;
@@ -35,7 +35,7 @@ public class JFXStarter extends AbstractJavaFxApplicationSupport {
 
 	@Bean
 	public StructureProvider structureProvider() {
-		return new ClassPathProvider();
+		return new FileSystemProvider();
 	}
 	
 	public static void main(String[] args) {

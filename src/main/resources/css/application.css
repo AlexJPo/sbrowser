@@ -4,3 +4,33 @@
 	-fx-font-weight: bold;
 	-fx-font-size: 16px;
 }
+
+/* Tooltip*/
+#jsonFileDialogTooltip,
+#javaProjectBtnTooltip,
+#fileSystemShowTooltip {
+	-fx-font-size: 12px;
+}
+
+/* Button */
+#homeBtn {
+	-fx-background-radius: 50%;
+	-fx-background-image: url("/img/home.png");
+	-fx-background-size: 60%;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+#javaProjectBtn,
+#jsonFileDialog,
+#fileSystemShow {
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+#javaProjectBtn { -fx-background-image: url("/img/java-project.png"); }
+#jsonFileDialog { -fx-background-image: url("/img/json_file.png"); }
+#fileSystemShow { -fx-background-image: url("/img/browser.png"); }
+
+#homeBtn:hover { -fx-background-image: url("/img/home-hover.png"); }
+#javaProjectBtn:hover { -fx-background-image: url("/img/java-project-hover.png"); }
+#jsonFileDialog:hover { -fx-background-image: url("/img/json_file-hover.png"); }
+#fileSystemShow:hover { -fx-background-image: url("/img/browser-hover.png"); }

@@ -1,21 +1,18 @@
 package alexjpo.providers;
 
 import alexjpo.model.ClassPathNode;
-import alexjpo.model.FileSystemNode;
 import alexjpo.model.Node;
 import com.google.common.reflect.ClassPath;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class ClassPathProvider implements StructureProvider {
+public class ClassPathProvider  {
 
-    @Override
+    /*@Override
     public String getSeparator() { return "/"; }
 
     @Override
@@ -52,5 +49,5 @@ public class ClassPathProvider implements StructureProvider {
         }
 
         return nodes;
-    }
+    }*/
 }

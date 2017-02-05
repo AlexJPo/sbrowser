@@ -8,4 +8,7 @@ public interface StructureProvider {
     Node nodeByPath(String path);
 
     Node[] getRoots();
+
+    Node[] getRootsByPath(String path);
+
 }
