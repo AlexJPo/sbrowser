@@ -44,7 +44,7 @@ public class FilesNavigation implements Breadcrumb {
             }
         } else {
             String tempFoldersPath = foldersPath
-                                    .replace(defaultFoldersPath + "\\", "")
+                                    .replace(defaultFoldersPath, "")
                                     .trim();
 
             for (String item: tempFoldersPath.split(separator)) {
@@ -61,7 +61,10 @@ public class FilesNavigation implements Breadcrumb {
 
     @Override
     public void pathUpdate() {
-        foldersPath = defaultFoldersPath + File.separator;
+        foldersPath = defaultFoldersPath;
+        if (!foldersPath.trim().isEmpty() && isFileSystem == true) {
+            foldersPath += File.separator;
+        }
 
         for (int i = 0; i < breadcrumbModel.size(); i++) {
             foldersPath += breadcrumbModel.get(i).replace(crumbSeparator, "") + File.separator;
